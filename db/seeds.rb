@@ -9,11 +9,14 @@
 Instructor.destroy_all
 Student.destroy_all
 
-vidhi  = Instructor.create(name: "Vidhi")
-raul   = Instructor.create(name: "Raul")
-david = Instructor.create(name: "David")
+sam  = Instructor.create(name: "Sam")
+adam   = Instructor.create(name: "Adam")
+mustafa = Instructor.create(name: "Mustafa")
 
-Student.create(name: "Caleb", age: 25, major: "Computer Science", instructor_id: david.id)
-Student.create(name: "Gian", age: 22, major: "Mathmatics", instructor_id: raul.id)
-Student.create(name: "Anam", age: 25, major: "Engineering", instructor_id: vidhi.id)
-Student.create(name: "Vien", age: 23, major: "Biology", instructor_id: raul.id)
+Student.create(name: "Caleb", age: 25, major: "Computer Science", instructor_id: mustafa.id)
+Student.create(name: "Gian", age: 22, major: "Mathmatics", instructor_id: adam.id)
+Student.create(name: "Anam", age: 25, major: "Engineering", instructor_id: sam.id)
+Student.create(name: "Vien", age: 23, major: "Biology", instructor_id: adam.id)
+Student.create(name: "Lindsay", age: 23, major: "Engineering", instructor_id: adam.id)
+Student.create(name: "Aaron", age: 23, major: "Biology", instructor_id: mustafa.id)
+Student.create(name: "Keila", age: 23, major: "Mathematics", instructor_id: sam.id)
